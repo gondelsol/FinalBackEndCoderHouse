@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "timestamp": ,
+        "name": "vino1",
+        "description": "malbec reserva",
+        "code": "mendoza1",
+        "thumbnail": "www.vino1.com.ar",
+        "price": 1823,
+        "stock": 23
+    },
+    {
+        "id": 2,
+        "timestamp": ,
+        "name": "vino2",
+        "description": "malbec roble",
+        "code": "mendoza1",
+        "thumbnail": "www.vino2.com.ar",
+        "price": 1300,
+        "stock": 12
+    },
+    {
+        "id": 3,
+        "timestamp": ,
+        "name": "vino3",
+        "description": "bonarda Valle de Uco",
+        "code": "mendoza3",
+        "thumbnail": "www.vino3.com.ar",
+        "price": 8300,
+        "stock": 33
+    },
+    {
+        "id": 4,
+        "timestamp": ,
+        "name": "vino3",
+        "description": "Merlot San Juan",
+        "code": "mendoza4",
+        "thumbnail": "www.vino4.com.ar",
+        "price": 2200,
+        "stock": 123
+    },
+    {
+        "id": 5,
+        "timestamp": ,
+        "name": "vino4",
+        "description": "Merlot Lavalle",
+        "code": "mendoza5",
+        "thumbnail": "www.vino5.com.ar",
+        "price": 10200,
+        "stock": 45
+    }
+]
