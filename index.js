@@ -1,8 +1,12 @@
 const express = require('express')
 const app = express()
+//import express from "express";
+//export const tipeOfClient = false;
 
 const PORT =  process.env.PORT || 8080
-export const tipeOfClient = false;
+//export const tipeOfClient = false;
+
+
 
 const cartRoute = require('./routes/cartRoute');
 const productRouter = require ('./routes/productRoute.js')
