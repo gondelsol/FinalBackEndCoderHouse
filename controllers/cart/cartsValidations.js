@@ -1,5 +1,5 @@
-import { cartContainer } from "../../routes/cart.js";
-import { prodContainer } from "../../routes/products.js";
+import { cartContainer } from "../../routes/cartRoute.js";
+import { prodContainer } from "../../routes/productRoute.js";
 
 export function existsCart(req, res, next) {
   cartContainer.getById(req.params.id)
@@ -23,6 +23,6 @@ export function existsProductInCart(req, res, next) {
   prod.length == 0
     ? res
         .status(401)
-        .json({ error: -3, descripcion: "This product doesn't exists in this cart" })
+        .json({ error: -3, descripcion: "This product is not in cart" })
     : next();
 }

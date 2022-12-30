@@ -1,11 +1,11 @@
-const express = require('express');
+import express from "express";
+import Container from "../Classes/class.js";
+
+
 const {Router} = express;
 const cartRouter = Router();
-const { Container} = require('../Classes/class')
 
-
-
-import { postCart, deleteCart, getProductsInCart, postProductInCart, deleteProductInCart } from '../controllers/cart/cartHandlers';
+import { postCart, deleteCart, getProductsInCart, postProductInCart, deleteProductInCart } from '../controllers/cart/cartHandlers.js';
 import { existsCart, existsProductForCartPost, existsProductInCart } from '../controllers/cart/cartsValidations.js'
 
 export const cartContainer = new Container ('../files/carts.txt')
@@ -20,4 +20,4 @@ cartRouter.post("/:id/productos/:id_prod", existsCart, existsProductForCartPost,
 
 cartRouter.delete("/:id/productos/:id_prod", existsCart, existsProductInCart, deleteProductInCart);
 
-module.exports = router;
+export default cartRouter;

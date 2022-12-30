@@ -1,5 +1,5 @@
-import { cartContainer } from "../../routes/cart.js";
-import { prodContainer } from "../../routes/products.js";
+import { cartContainer } from "../../routes/cartRoute.js";
+import { prodContainer } from "../../routes/productRoute.js";
 
 export async function deleteCart(req, res) {
   const id = await cartContainer.deleteById(req.params.id);

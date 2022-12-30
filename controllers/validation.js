@@ -1,5 +1,4 @@
-
-import { tipeOfClient } from "../index";
+import { tipeOfClient } from "../index.js";
 
 export function isAdmin(req, res, next) {
   tipeOfClient

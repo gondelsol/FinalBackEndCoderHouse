@@ -1,14 +1,13 @@
 import express from "express";
-import { tipeOfClient } from '../index';
+import { tipeOfClient } from '../index.js';
 import {getProducts, postProducts, putProducts, deleteProducts} from "../controllers/products/productsHandlers.js";
 import { validId, existsProduct } from "../controllers/products/productsValidations.js";
+import Container from "../Classes/class.js";
 
-const tipeOfClient = false;
+//const tipeOfClient = false;
 
 const {Router} = express;
 const router = Router();
-
-const {Container} = require('../Classes/class')
 
 
 
@@ -23,4 +22,4 @@ router.put("/:id", tipeOfClient, existsProduct, putProducts);
 router.delete("/:id", tipeOfClient, existsProduct, deleteProducts);
 
 
-module.exports = router;
+export default productRouter;

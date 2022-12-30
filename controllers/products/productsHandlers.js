@@ -1,4 +1,4 @@
-import { prodContainer } from "../../routes/products.js";
+import { prodContainer } from "../../routes/productRoute.js";
 
 export async function deleteProducts(req, res) {
   const id = await prodContainer.deleteById(req.params.id);
