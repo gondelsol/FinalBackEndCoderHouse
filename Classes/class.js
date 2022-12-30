@@ -11,7 +11,7 @@ class Container {
       this.arrayObj = JSON.parse(fs.readFileSync(this.nombreArchivo, "utf-8"));
       this.nextId = this.#getNextId();
     } else {
-      console.log("Products does not exist... creating...");
+      console.log("Product does not exist... creating...");
       this.nextId = 0;
       fs.writeFileSync(this.nombreArchivo, JSON.stringify(this.arrayObj));
     }

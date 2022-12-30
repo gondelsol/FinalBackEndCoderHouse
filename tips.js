@@ -1,3 +1,6 @@
+
+/* Tips para el trabajo
+
 app.get(‘*’, function(req, res){
     res.sendFile(__dirname+’/public/error.html’);
     }
@@ -20,3 +23,5 @@ app.post('/productos', () => {
         res.send({ERORORORO})
     }
 })
+
+*/
