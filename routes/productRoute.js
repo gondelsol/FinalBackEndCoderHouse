@@ -7,19 +7,18 @@ import Container from "../Classes/class.js";
 //const tipeOfClient = false;
 
 const {Router} = express;
-const router = Router();
+const productRouter = Router();
 
 
+export const prodContainer = new Container( "../files/products.txt")
 
-export const prodContainer = new Container("../files/products.txt")
+productRouter.get("/:id?", validId, getProducts);
 
-router.get("/:id?", validId, getProducts);
+productRouter.post("/", tipeOfClient , postProducts);
 
-router.post("/", tipeOfClient , postProducts);
+productRouter.put("/:id", tipeOfClient, existsProduct, putProducts);
 
-router.put("/:id", tipeOfClient, existsProduct, putProducts);
-
-router.delete("/:id", tipeOfClient, existsProduct, deleteProducts);
+productRouter.delete("/:id", tipeOfClient, existsProduct, deleteProducts);
 
 
 export default productRouter;
